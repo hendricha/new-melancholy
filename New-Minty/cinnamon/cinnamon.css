@@ -270,6 +270,15 @@ StScrollBar StButton#hhandle:focus {
   -arrow-rise: 8px;
   -boxpointer-gap: 2px;
 }
+.popup-menu-content {
+  border-image: url("background-assets/popup-inside.svg") 9;
+  padding: .7em 0;
+  color: white;
+}
+.popup-menu-icon, .popup-menu StIcon {
+  icon-size: 16px;
+  color: #fff;
+}
 .popup-menu-item {
   padding: .4em 1.3em;
   spacing: .8em;
@@ -278,21 +287,12 @@ StScrollBar StButton#hhandle:focus {
   border-image: url("background-assets/hover-2.svg") 9;
   color: white;
 }
+.popup-menu-item:active .popup-menu-icon, .popup-menu-item:active StIcon {
+  color: #fff;
+}
 .popup-menu-item:insensitive {
   font-weight: normal;
   color: rgba(255, 255, 255, 0.15);
-}
-.popup-menu-item:active .popup-menu-icon {
-  color: #fff;
-}
-.popup-menu-content {
-  border-image: url("background-assets/popup-inside.svg") 9;
-  padding: .7em 0;
-  color: white;
-}
-.popup-menu-icon {
-  icon-size: 16px;
-  color: #fff;
 }
 .popup-menu-item-dot {
   /*!*/
@@ -329,42 +329,25 @@ StScrollBar StButton#hhandle:focus {
 }
 
 .popup-slider-menu-item {
-  border-image: url("widget-assets/slider.svg") 7;
-  min-width: 15em;
-  height: 16px;
   -slider-height: 2px;
   -slider-background-color: transparent;
   -slider-border-color: transparent;
   -slider-active-background-color: #8abf5c;
   -slider-active-border-color: transparent;
-  -slider-border-width: 0;
+  -slider-border-width: 2px;
   -slider-handle-radius: 5px;
+  color: #fff;
+  border-image: url("widget-assets/slider.svg") 9 6 8 8;
+  border: 0 solid transparent;
+  min-width: 15em;
+  height: 16px;
 }
 .popup-menu-item:active .popup-slider-menu-item {
-  border-image: url("widget-assets/slider-hover.svg") 7;
-  min-width: 15em;
-  height: 16px;
-  -slider-height: 2px;
-  -slider-background-color: transparent;
-  -slider-border-color: transparent;
-  -slider-active-background-color: #8abf5c;
-  -slider-active-border-color: transparent;
-  -slider-border-width: 0;
-  -slider-handle-radius: 5px;
+  border-image: url("widget-assets/slider-hover.svg") 9 6 8 8;
 }
 
-.popup-combobox-item {
-  spacing: 1em;
-}
-
-.popup-device-menu-item {
-  spacing: .5em;
-}
-
-.popup-inactive-menu-item,
-.popup-subtitle-menu-item,
-.popup-alternating-menu-item:alternate {
-  font-weight: normal;
+.popup-inactive-menu-item {
+  color: rgba(255, 255, 255, 0.55);
 }
 
 /* ===================================================================
@@ -657,7 +640,6 @@ StScrollBar StButton#hhandle:focus {
   padding-right: 6px;
 }
 #notification-body {
-  border-image: url("misc-assets/separator-top.svg") 2 2 2 0;
   font-weight: normal;
   font-size: 9pt;
   spacing: 5px;
@@ -707,6 +689,9 @@ StScrollBar StButton#hhandle:focus {
 }
 .switcher-list .item-box {
   padding: 10px;
+}
+.switcher-list .item-box StLabel {
+  padding-top: .4em;
 }
 .switcher-list .item-box:selected {
   border-image: url("background-assets/hover.svg") 7;
@@ -1387,15 +1372,29 @@ StScrollBar StButton#hhandle:focus {
 }
 
 /* ===================================================================
-   ! Snap/Tile OSD
-   ===================================================================*/
-.snap-osd {
-  border-image: url("background-assets/popup.svg") 9;
-  font-size: 12pt;
-  font-weight: bold;
-  padding: 14px;
-  color: white;
+ * ! OSD
+ * ===================================================================*/
+.info-osd {
   text-align: center;
+  font-weight: bold;
+  spacing: 1em;
+  padding: 16px;
+  color: white;
+  border-image: url("background-assets/popup.svg") 7;
+}
+
+.osd-window {
+  spacing: 1em;
+  padding: 16px;
+  color: white;
+  border-image: url("background-assets/popup.svg") 10;
+}
+.osd-window StIcon {
+  color: #fff;
+}
+.osd-window .level {
+  height: 3px;
+  color: #8abf5c;
 }
 
 /* ===================================================================
@@ -1407,6 +1406,16 @@ StScrollBar StButton#hhandle:focus {
 
 .magnifier-zoom-region.full-screen {
   border: none;
+}
+
+/* ===================================================================
+ * ! Tile Previews
+ * ===================================================================*/
+.tile-preview, .tile-hud {
+  background-color: rgba(20, 20, 20, 0.9);
+}
+.tile-preview.snap, .tile-hud.snap {
+  background-color: rgba(138, 191, 92, 0.8);
 }
 
 /* ===================================================================

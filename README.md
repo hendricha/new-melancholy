@@ -1,4 +1,4 @@
-###A theme for cinnamon __2.4__
+###A theme for cinnamon _2.6_
 
 ---
 

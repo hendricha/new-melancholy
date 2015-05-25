@@ -29,8 +29,8 @@
      borderopacity="1"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:zoom="61.783455"
-     inkscape:cx="7.6759419"
+     inkscape:zoom="30.891728"
+     inkscape:cx="5.4342414"
      inkscape:cy="7.9542203"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -38,15 +38,15 @@
      inkscape:document-units="px"
      inkscape:showpageshadow="false"
      inkscape:window-width="1600"
-     inkscape:window-height="875"
-     inkscape:window-x="-1"
-     inkscape:window-y="24"
+     inkscape:window-height="846"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
      width="400px"
      height="300px"
      inkscape:snap-nodes="true"
      inkscape:snap-bbox="true"
      gridtolerance="10000"
-     inkscape:object-nodes="false"
+     inkscape:object-nodes="true"
      inkscape:snap-grids="true"
      showguides="true"
      inkscape:guide-bbox="true"
@@ -143,7 +143,7 @@
      transform="translate(0,-284)">
     <path
        id="rect5190"
-       d="m 4,290 0,4 8,0 0,-4 z m 1,1 6,0 0,2 -6,0 z"
+       d="m 1,290 0,4 11,0 0,-4 z m 1,1 9,0 0,2 -9,0 z"
        style="opacity:0.45;fill:#000000;fill-opacity:1;stroke:none"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cccccccccc" />
@@ -152,7 +152,7 @@
        y="291"
        x="-11"
        height="2"
-       width="6.0035048"
+       width="9"
        id="rect3766"
        style="opacity:0.2;fill:#ffffff;fill-opacity:1;stroke:none" />
   </g>

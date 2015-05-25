@@ -19,6 +19,8 @@
     .item-box {
         padding: 10px;
 
+        StLabel { padding-top: .4em; }
+
         &:selected {
             border-image: url("background-assets/hover.svg") 7;
             color: $text-primary;
