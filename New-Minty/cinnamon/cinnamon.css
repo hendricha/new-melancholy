@@ -357,7 +357,9 @@ StScrollBar StButton#hhandle:focus {
   border-image: url("panel-assets/panel-top.svg") 4;
   font-size: 9pt;
   height: 25px;
-  /* panel edit mode */
+}
+.panel-top:highlight {
+  border-image: url("panel-assets/panel-top-highlight.svg") 4;
 }
 .panel-top #panelLeft:dnd {
   border-image: url("panel-assets/DND-panel-top-left.svg") 4;
@@ -373,7 +375,9 @@ StScrollBar StButton#hhandle:focus {
   border-image: url("panel-assets/panel-bottom.svg") 4;
   font-size: 9pt;
   height: 25px;
-  /* panel edit mode */
+}
+.panel-bottom:highlight {
+  border-image: url("panel-assets/panel-bottom-highlight.svg") 4;
 }
 .panel-bottom #panelLeft:dnd {
   border-image: url("panel-assets/DND-panel-bottom-left.svg") 4;
@@ -383,6 +387,13 @@ StScrollBar StButton#hhandle:focus {
 }
 .panel-bottom #panelRight:dnd {
   border-image: url("panel-assets/DND-panel-bottom-right.svg") 4;
+}
+
+.panel-dummy {
+  background-color: rgba(138, 191, 92, 0.8);
+}
+.panel-dummy:entered {
+  background-color: #8abf5c;
 }
 
 /* This styles the systray items */
