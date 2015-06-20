@@ -975,8 +975,8 @@ StScrollBar StButton#hhandle:focus {
   font-size: 8pt;
   font-weight: bold;
   text-align: center;
-  width: 29px;
-  height: 29px;
+  width: 2.3em;
+  height: 2.7em;
 }
 
 .calendar-day-heading {
@@ -984,7 +984,7 @@ StScrollBar StButton#hhandle:focus {
   color: white;
   padding-top: 9px;
   padding-bottom: 6px;
-  height: 15px;
+  height: 1.5em;
 }
 
 .calendar-work-day {
@@ -1003,7 +1003,6 @@ StScrollBar StButton#hhandle:focus {
   border-image: url("misc-assets/calendar-today.svg") 6;
   color: white;
   font-weight: bold;
-  font-size: 9pt;
 }
 
 .calendar-other-month-day {
@@ -1016,8 +1015,8 @@ StScrollBar StButton#hhandle:focus {
   color: rgba(255, 255, 255, 0.55);
   font-size: 8pt;
   font-weight: normal;
-  height: 16px;
-  width: 12px;
+  height: 1.6em;
+  width: 1.2em;
   padding-top: 8px;
   padding-right: 6px;
 }
