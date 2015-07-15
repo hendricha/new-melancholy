@@ -42,9 +42,17 @@ gulp.task('reloadTheme', ['sass'], shell.task([
 
 // Make a symlink in the ~/.themes dir
 gulp.task('install', function () {
-    fs.mkdir(process.env.HOME+'/.themes/', function(){})
-    fs.unlink(process.env.HOME+'/.themes/New-Minty/', function(){})
-    fs.symlink(__dirname+'/../../New-Minty/', process.env.HOME+'/.themes/New-Minty', function(){})
+    try {
+        fs.mkdirSync(process.env.HOME+'/.themes');
+    } catch (err) {
+        if (err.code !== 'EEXIST') throw err;
+    }
+    try {
+        fs.unlinkSync(process.env.HOME+'/.themes/New-Minty');
+    } catch (err) {
+        if (err.code !== 'ENOENT') throw err;
+    }
+        fs.symlinkSync(__dirname+'/../../New-Minty', process.env.HOME+'/.themes/New-Minty');
 });
 
 
@@ -55,4 +63,6 @@ gulp.task('watch', function () {
 
 
 // Default task
-gulp.task('default', ['install', 'reloadTheme', 'watch']);
+gulp.task('default', ['install', 'watch'], function() {
+    gulp.start('reloadTheme');
+});
