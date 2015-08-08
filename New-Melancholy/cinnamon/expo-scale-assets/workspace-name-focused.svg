@@ -135,7 +135,7 @@
        d="m 2.9999996,276.00002 c -1.662,0 -3.00000002,1.338 -3.00000002,3 l 0,18 c 0,1.662 1.33800002,3 3.00000002,3 l 18.0000004,0 c 1.662,0 3,-1.338 3,-3 l 0,-18 c 0,-1.662 -1.338,-3 -3,-3 l -18.0000004,0 z m 0,1 18.0000004,0 c 1.108,0 2,0.892 2,2 l 0,18 c 0,1.108 -0.892,2 -2,2 l -18.0000004,0 c -1.108,0 -2,-0.892 -2,-2 l 0,-18 c 0,-1.108 0.892,-2 2,-2 z"
        id="rect4161" />
     <rect
-       style="display:inline;opacity:1;fill:#8abf5c;fill-opacity:1;stroke:none;enable-background:new"
+       style="display:inline;opacity:1;fill:#268bd2;fill-opacity:1;stroke:none;enable-background:new"
        id="rect2995"
        width="22"
        height="22"

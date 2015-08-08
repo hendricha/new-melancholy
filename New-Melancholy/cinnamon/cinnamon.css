@@ -7,13 +7,13 @@ stage {
 }
 
 .cinnamon-link {
-  color: #8abf5c;
+  color: #268bd2;
   font-weight: normal;
   text-decoration: underline;
 }
 
 .cinnamon-link:hover {
-  color: #7540a3;
+  color: #d9742d;
 }
 
 .label-shadow {
@@ -106,7 +106,7 @@ StScrollBar StButton#hhandle:focus {
   caret-color: rgba(0, 0, 0, 0.75);
   caret-size: 1px;
   selected-color: white;
-  selection-background-color: #8abf5c;
+  selection-background-color: #268bd2;
 }
 
 .popup-menu StEntry:focus StIcon,
@@ -377,7 +377,7 @@ StScrollBar StButton#hhandle:focus {
   -slider-height: 2px;
   -slider-background-color: transparent;
   -slider-border-color: transparent;
-  -slider-active-background-color: #8abf5c;
+  -slider-active-background-color: #268bd2;
   -slider-active-border-color: transparent;
   -slider-border-width: 2px;
   -slider-handle-radius: 5px;
@@ -443,12 +443,25 @@ StScrollBar StButton#hhandle:focus {
   border-image: url("panel-assets/DND-panel-bottom-right.svg") 4;
 }
 
+.panel-corner {
+  -panel-corner-radius: 6px;
+  -panel-corner-background-color: rgba(0, 0, 0, 0.5);
+  -panel-corner-border-width: 2px;
+  -panel-corner-border-color: transparent;
+}
+
+.panel-corner:active,
+.panel-corner:overview,
+.panel-corner:focus {
+  -panel-corner-border-color: rgba(255, 255, 255, 0.8);
+}
+
 .panel-dummy {
-  background-color: rgba(138, 191, 92, 0.8);
+  background-color: rgba(38, 139, 210, 0.8);
 }
 
 .panel-dummy:entered {
-  background-color: #8abf5c;
+  background-color: #268bd2;
 }
 
 /* This styles the systray items */
@@ -559,7 +572,7 @@ StScrollBar StButton#hhandle:focus {
   selected-color: white;
   caret-color: rgba(0, 0, 0, 0.75);
   caret-size: 1px;
-  selection-background-color: #70a741;
+  selection-background-color: #1e6ea7;
 }
 
 .workspace-close-button {
@@ -1542,7 +1555,7 @@ StScrollBar StButton#hhandle:focus {
 
 .osd-window .level {
   height: 3px;
-  color: #8abf5c;
+  color: #268bd2;
 }
 
 /* ===================================================================
@@ -1564,7 +1577,7 @@ StScrollBar StButton#hhandle:focus {
 }
 
 .tile-preview.snap, .tile-hud.snap {
-  background-color: rgba(138, 191, 92, 0.8);
+  background-color: rgba(38, 139, 210, 0.8);
 }
 
 /* ===================================================================
@@ -1591,7 +1604,7 @@ StScrollBar StButton#hhandle:focus {
   background-gradient-direction: vertical;
   background-gradient-start: rgba(255, 255, 255, 0);
   background-gradient-end: rgba(255, 255, 255, 0);
-  color: #8abf5c;
+  color: #268bd2;
   text-decoration: underline;
 }
 
@@ -2109,7 +2122,7 @@ StScrollBar StButton#hhandle:focus {
 }
 
 .sticky-button-selected * {
-  color: #8abf5c;
+  color: #268bd2;
 }
 
 .sticky-button-box {
@@ -2195,7 +2208,7 @@ StScrollBar StButton#hhandle:focus {
   caret-color: rgba(0, 0, 0, 0.75);
   caret-size: 1px;
   selected-color: white;
-  selection-background-color: #8abf5c;
+  selection-background-color: #268bd2;
   padding: 6px;
 }
 
@@ -2212,7 +2225,7 @@ StScrollBar StButton#hhandle:focus {
   selected-color: white;
   caret-color: rgba(0, 0, 0, 0.75);
   caret-size: 1px;
-  selection-background-color: #8abf5c;
+  selection-background-color: #268bd2;
 }
 
 /* ===================================================================
@@ -2417,7 +2430,7 @@ StScrollBar StButton#hhandle:focus {
 }
 
 .grid-preview:activate {
-  background-color: rgba(138, 191, 92, 0.5);
+  background-color: rgba(38, 139, 210, 0.5);
   border: 1px solid rgba(0, 0, 0, 0.45);
   border-radius: 2px;
 }
