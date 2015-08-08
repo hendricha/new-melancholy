@@ -1,10 +1,10 @@
 {
    "cinnamon-theme": {
-        "name" : "New-Minty",
-        "author" : "zagortenay333",
+        "name" : "New-Melancholy",
+        "author" : "hendricha",
         "version" : "",
         "type" : "custom",
         "thumbnail" : "thumbnail.png",
-        "url" : "https://github.com/zagortenay333/new-minty"
+        "url" : "https://github.com/hendricha/new-melancholy"
     }
 }

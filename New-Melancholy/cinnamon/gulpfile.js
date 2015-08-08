@@ -36,7 +36,7 @@ gulp.task('sass', function () {
 // Wait for sass to compile & reload theme
 gulp.task('reloadTheme', ['sass'], shell.task([
     'gsettings set org.cinnamon.theme name default',
-    'gsettings set org.cinnamon.theme name New-Minty'
+    'gsettings set org.cinnamon.theme name New-Melancholy'
 ]));
 
 
@@ -48,11 +48,11 @@ gulp.task('install', function () {
         if (err.code !== 'EEXIST') throw err;
     }
     try {
-        fs.unlinkSync(process.env.HOME+'/.themes/New-Minty');
+        fs.unlinkSync(process.env.HOME+'/.themes/New-Melancholy');
     } catch (err) {
         if (err.code !== 'ENOENT') throw err;
     }
-        fs.symlinkSync(__dirname+'/../../New-Minty', process.env.HOME+'/.themes/New-Minty');
+        fs.symlinkSync(__dirname+'/../../New-Melancholy', process.env.HOME+'/.themes/New-Melancholy');
 });
 
 
